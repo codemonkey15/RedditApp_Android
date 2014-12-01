@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:padding="32px"
+    android:orientation="vertical"
+    android:weightSum="1">
+    <RelativeLayout
+        android:id="@+id/mainLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/icon1"
+            android:layout_width="160px"
+            android:layout_height="160px"
+            android:layout_alignParentTop="true"
+            android:contentDescription="TODO"
+            android:src="@drawable/reddit"
+            android:scaleType="centerInside"
+            android:nestedScrollingEnabled="true"
+            android:layout_alignParentBottom="false"
+            android:layout_marginRight="32px"
+            android:layout_alignParentLeft="false"
+            android:layout_alignParentRight="false" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/icon1"
+            android:layout_toRightOf="@+id/icon1">
+            <TextView
+                android:id="@+id/authorInfo"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="marquee"
+                android:padding="2px"
+                android:text="authors information goes here."
+                android:textSize="12sp"
+                android:layout_below="@+id/authorTitle"/>
+
+            <TextView
+                android:id="@+id/authorTitle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="marquee"
+                android:singleLine="true"
+                android:text="Authors"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:background="#0099CC"
+                android:layout_below="@+id/titleInfo" />
+
+            <TextView
+                android:id="@+id/titleInfo"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Title goes here."
+                android:padding="2px"
+                android:textSize="12sp"
+                android:layout_below="@+id/titleTitle" />
+            <TextView
+                android:id="@+id/titleTitle"
+                android:layout_width="fill_parent"
+                android:gravity="center_vertical"
+                android:layout_height="wrap_content"
+                android:ellipsize="marquee"
+                android:singleLine="true"
+                android:layout_alignParentTop="true"
+                android:text="Title"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:background="#0099CC" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <RelativeLayout
+        android:paddingTop="32px"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/dateInfo"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="marquee"
+            android:padding="2px"
+            android:text="Date information goes here."
+            android:textSize="12sp"
+            android:layout_below="@+id/dateTitle"/>
+
+        <TextView
+            android:id="@+id/dateTitle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="marquee"
+            android:layout_alignParentTop="true"
+            android:singleLine="true"
+            android:text="Created On"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:background="#0099CC" />
+
+        <TextView
+            android:id="@+id/commentInfo"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="marquee"
+            android:singleLine="true"
+            android:padding="2px"
+            android:text="Number of comments goes here."
+            android:textSize="12sp"
+            android:layout_below="@+id/commentsTitle"/>
+
+        <TextView
+            android:id="@+id/commentsTitle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="marquee"
+            android:singleLine="true"
+            android:text="Number of comments"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:background="#0099CC"
+            android:layout_below="@+id/dateInfo"/>
+
+
+
+    </RelativeLayout>
+</LinearLayout>
+
